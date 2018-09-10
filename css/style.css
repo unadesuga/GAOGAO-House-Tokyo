@@ -1,0 +1,413 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------- */
+
+/* REUSEBLE COMPONENTS */
+
+/* -----------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.features, .address, .apply {
+  background-color: rgba(246, 246, 246, 0.81);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 330%;
+  word-spacing: 2px;
+  letter-spacing: 4px;
+  font-weight: normal;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 190%;
+  text-align: center;
+  word-spacing: 2px;
+  margin: 30px 0 45px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  text-align: center;
+  letter-spacing: 2%;
+}
+
+h3:after {
+  display: block;
+  height: 2px;
+  background-color: #e39023;
+  content: " ";
+  width: 100px;
+  margin: 30px auto 0;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 130%;
+  margin-bottom: 10px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 70%;
+  margin-bottom: 40px
+}
+
+/* LINKS---------------------- */
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover, a:active {
+  color: #e39023;
+  transition: all .3s;
+}
+
+/* BUTTONS---------------------- */
+
+.btn, input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  transition: all .2s;
+  background-color: #e39023;
+  color: #fff;
+}
+
+.btn:hover, input[type=submit]:hover, input[type=submit]:active {
+  background-color: #cf6d17;
+  color: #fff;
+}
+
+/* HEADINGS -----------------------------------------*/
+
+header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.subtitle {
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-size: 150%;
+  font-weight: 300;
+}
+/* slide---------------------------------------------------------- */
+
+.hero-section {
+  position: relative;
+  padding: 0;
+}
+
+.hero-ul {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* logo-------------------------------------------------------------------- */
+
+
+.logo-black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  float: left;
+  margin-top: 28px;
+  margin-left: 30px;
+}
+
+.logo {
+  display: none;
+}
+
+/* MAIN NAV--------------------------------------------------------------- */
+
+.main-nav {
+  padding-top: 28px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 25px;
+}
+
+.main-nav li > a {
+  color: #fff;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .2s;
+  padding: 10px 0;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+  border-bottom: 2px solid #e06a30;
+}
+
+/* MOBILE NAV--------------------------------------------------------------- */
+
+.mobile-nav-icon {
+  float: right;
+  margin: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* STICKY NAV--------------------------------------------------------------- */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.98);
+  z-index: 9999;
+}
+
+.sticky .main-nav li > a {
+  color: #555;
+  font-size: 90%;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom .2s;
+  padding: 9px 0;
+}
+
+.sticky .main-nav li a:hover, .main-nav li a:active {
+  border-bottom: 2px solid #e06a30;
+}
+
+.sticky .main-nav {
+  padding-top: 18px;
+}
+
+.sticky .logo-black {
+  display: none;
+}
+
+.sticky .logo {
+  display: block;
+}
+
+.sticky .logo {
+  height: 40px;
+  margin: 11px 10px 0;
+}
+
+
+
+/* FEATURES------------------------------------------------ */
+
+.icon {
+  font-size: 400%;
+  display: block;
+  color: #e39023;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.features-description {
+  text-align: center;
+}
+
+.features-description > p {
+  margin-bottom: 30px;
+}
+
+/* photos------------------------------------------- */
+
+.photos p {
+  margin-bottom: 40px;
+}
+
+.photos img {
+  width: 90%;
+  height: auto;
+}
+
+/* ADDRESS-----------------------------------------*/
+
+.world-map {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.address {
+  background-color: rgba(246, 246, 246);
+}
+
+.address-house {
+  font-size: 110%;
+}
+
+.pin-icon {
+  color: #e39023;
+}
+
+.new-open {
+  font-size: 70%;
+}
+
+/* FOUNDER -----------------------------------------*/
+
+.founder-description {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-more {
+  text-align: center;
+}
+
+.founder-photo img {
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  margin-bottom: 20px
+}
+
+.founder-photo>p {
+  margin-bottom: 20px;
+}
+
+/* APPLY -----------------------------------------*/
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+.submit-center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* footer------------------------------------------------- */
+
+footer {
+  background-color: rgba(71, 66, 66, 0.89);
+  padding: 50px 50px 20px 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.footer-nav li {
+  display: block;
+  padding: 20px;
+}
+
+.footer-nav li a {
+  color: #fff;
+}
+
+.footer-nav li a:hover {
+  color: #e39023;
+  transition: all .3s;
+}
+
+.widget {
+  float: right;
+}
+
+.widget>p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.twitter-timeline {
+  /* width: 30%; */
+  margin: 10px 0;
+}
+
+.copyright {
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 60%;
+}

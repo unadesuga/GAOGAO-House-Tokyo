@@ -1,0 +1,87 @@
+@media screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .row { padding: 0 3%;}
+
+
+  /* .altenative { display: none;}        */      /* JP & EN .ver */
+
+
+}
+
+@media screen and (max-width: 1023px) {
+  body { font-size: 18px;}
+  section {padding: 60px 0;}
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+  body { font-size: 16px;}
+  section {padding: 30px 0;}
+
+  .mobile-nav-icon { display: inline-block;}
+
+  .main-nav {
+    display: block;             /* JP & EN .ver    これを非表示に*/
+    float: right;
+    padding: 0;
+    margin-top: 10px;
+    /* margin-left: 25px; */
+  }
+  .main-nav { display: none}
+  .main-nav li {display: block;}
+  .main-nav li > a {
+    display: block;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+h1 {
+  font-size: 150%;
+}
+.subtitle {
+  font-size: 80%;
+}
+
+.founder-description {
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+
+.main-nav {
+  display: none;
+}
+
+/* .alternative {                 JP & EN .ver
+  display: block;
+} */
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .col {
+    width: 100%;
+    margin: 1% 0 4% 0%;
+  }
+
+
+
+}
